@@ -1,0 +1,31 @@
+{
+  "name": "heilrituale",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "serveur -p 3333 src/ & live-reload src --port 9999 --delay 0",
+    "build:css": "stylus < src/index.styl > public/index.css",
+    "build:html": "jade < src/index.jade > public/index.html",
+    "build": "npm run build:css && npm run build:html",
+    "upload": "surge public/ heilrituale.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akralj/heilrituale.git"
+  },
+  "author": "akralj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akralj/heilrituale/issues"
+  },
+  "homepage": "https://github.com/akralj/heilrituale#readme",
+  "devDependencies": {
+    "stylus": "latest",
+    "jade": "latest",
+    "browserify": "latest",
+    "serveur": "latest",
+    "live-reload": "latest"
+  }
+}

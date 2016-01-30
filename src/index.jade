@@ -1,0 +1,78 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title CSS Holy Grail layout
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Simple but powerful Holy Grail layout')
+    // Include Holy Grail layout
+    link(rel='stylesheet', href='holygrail.css')
+    link(rel='stylesheet', href='index.css')
+  body
+    div
+      .restrict
+        .menu
+          a.menu_link(href='images/index.html', style='font-weight:bold')  HOME
+          a.menu_link(href='http://heilrituale.at/uebermich.htm')  ÜBER MICH
+          a.menu_link(href='http://heilrituale.at/heilrituale.htm')  HEIL.RITUALE
+          a.menu_link(href='http://heilrituale.at/termine.htm')  TERMINE
+          // a.menu_link(href='http://heilrituale.at/kontakt.htm')  KONTAKT
+    header
+      .restrict
+        .imageWrap
+          img(src='images/logo.png')
+        .headerText
+          h1 HEIL.RITUALE
+          h3 Dipl. Ing.
+            sup in
+            Sabine Daschiel
+    main
+      .restrict
+        // Left column
+        aside
+          h1 Sidebar 1
+          | FBig screen: static width of 200px.
+        // Middle column
+        article
+          h1  ANGEBOT:
+          ul
+            li Schamanische Heilrituale
+            li Systemische Beratungen
+            li Familienaufstellungen in Einzelsitzungen
+            li Matrix Energetics
+            li Dorn Breuss
+          h1  TERMINVEREINBARUNG:
+          ul
+            li für Linz oder Neumarkt/Mkr.
+            li +43 (0) 699 10561070
+            li info@heilrituale.at
+
+        // Right column
+        aside
+          h1  GRÜNDE FÜR HEIL.RITUALE:
+          ul
+            li Wiedererlangung der inneren Würde
+            li Akzeptanz des eigenen Seins
+            li Erarbeitung von Visionen und Zielen
+            li Finden und Gehen des eigenen Wegs
+            li Stärkung des Selbstbewusstseins
+            li Sicherheit finden für Entscheidungen
+            li Kennenlernen der inneren F?hrung
+            li Rückverbindung mit seinen Ahnen
+            li Auflösung negativer Glaubenssätze
+            li Kraft in schwierigen Lebenssituationen
+            li Stärkung des Energiesystems
+
+    footer
+      .restrict
+        ul
+          li Dipl. Ing.
+            sup in 
+            | Sabine Daschiel
+          li Schiernersdorf 7
+          li 4212 Neumarkt im Mühlkreis
+          li +43 (0) 699 / 10561070
+          li info@heilrituale.at
+
+  script(type='text/javascript', src='http://localhost:9999/')

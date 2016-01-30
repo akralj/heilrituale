@@ -1,0 +1,104 @@
+pageBackgroundColor= #ddd
+headerBackgroundColor= #970034
+leftMargin= 250px
+
+body
+  margin 0
+  font 14px arial,helvetica,clean,sans-serif
+  background: pageBackgroundColor
+
+.restrict
+  max-width 1000px
+  border-left 1px solid #000
+  border-right 1px solid #000
+  background: snow
+
+
+header
+  .restrict
+    background: headerBackgroundColor
+    .imageWrap
+      margin-bottom: -5px;
+      img
+        margin-left: 70px
+main
+  background: pageBackgroundColor
+
+
+aside
+  &:first-child
+    width: leftMargin
+    background #b2f9a2
+  &:last-child
+    width 375px
+    background #a2acf9
+
+article
+  background #f9dfa2
+
+footer
+  .restrict
+    background #eff9a2
+    border-top: 8px solid headerBackgroundColor
+    ul
+      li
+        display: inline
+        margin-left: 10px
+
+aside, article
+  padding 0 10px 10px 10px
+
+header .restrict, footer .restrict
+  padding 0 10px
+
+.menu
+  margin-left: leftMargin
+  margin-top: 1em
+  .menu_link
+    color:#990033;
+    font-size:18px;
+    text-transform:uppercase;
+    padding-left:20px;
+    text-decoration:none;
+
+@media (max-width:800px)
+  header
+    .restrict
+      .imageWrap
+        margin-left: -10px;
+        img
+          margin-left: 0
+          width: 100%
+          height: auto
+  .menu
+    margin-left: 0
+
+    margin-bottom: 1em
+    .menu_link
+      font-size:14px;
+      padding-left:5px;
+  main
+    .restrict
+      -webkit-box-orient vertical
+      -webkit-flex-direction column
+      flex-direction column
+  .restrict
+    border 0
+
+  aside:first-child
+    display: none
+  aside:last-child
+    width auto
+  footer
+    .restrict
+      ul
+        margin: 1em auto
+        li
+          display: block
+          margin-left: 0
+
+.vertical-centered
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+
